@@ -35,7 +35,7 @@ class Form extends React.Component {
         <input
           placeholder="Add task here"
           value={inputText}
-          onChange={this.onChange}
+          onChange={this.inputOnChange}
         />
         <button type="submit" disabled={inputText === ""}>
           Submit

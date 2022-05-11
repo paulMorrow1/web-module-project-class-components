@@ -34,7 +34,7 @@ export default class App extends React.Component {
     });
   };
 
-  toggleCompleted = (id) => {
+  toggleTodo = (id) => {
     const markingTodocompleted = this.state.todos.map((todo) => {
       if (todo.id === id) {
         return {
@@ -96,7 +96,7 @@ export default class App extends React.Component {
         <TodoList
           todos={this.filterTodos(todos)}
           deleteTodo={this.deleteTodo}
-          toggleCompleted={this.toggleCompleted}
+          toggleTodo={this.toggleTodo}
         />
         <button onClick={this.showFullList}>Show Full List</button>
         <button onClick={this.showCompleted}>Show Completed</button>
